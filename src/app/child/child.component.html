@@ -1,0 +1,21 @@
+<div class="one" *ngIf="one">one</div>
+<div class="two" *ngIf="two">two</div>
+
+
+<div class="child">
+  <ng-container *ngFor="let num of numbers">
+    <h2 class="header">Box Heading</h2>
+  </ng-container>
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, consectetur numquam dolores, repellat eius earum deleniti mollitia possimus voluptatibus inventore harum ipsum non perferendis placeat nam eligendi eaque unde? Nulla.</p>
+  <h2 class="footer">Box Footer</h2>
+
+
+  <div *ngIf="val==true">
+    This is true{{ddd}}
+  </div>
+
+  <div *ngIf="val!==true">
+    This is not tue{{ddd}}
+  </div>
+</div>

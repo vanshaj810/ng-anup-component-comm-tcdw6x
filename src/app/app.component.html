@@ -1,0 +1,29 @@
+<!-- <hello name="{{ name }}"></hello> -->
+ <button (click)="onToggle()">toggle </button>
+ <br>
+ <br>
+ 
+<app-child [val]="value" [one]="true" [two]="true">
+  
+</app-child>
+
+<div class="infobar" *ngIf="addedProduct">
+    {{addedProduct}} is selected and added
+</div>
+<div class="product">
+  <h2>Laptop</h2>
+  <button (click)="onSelectProduct('Laptop')">Select this</button>
+</div>
+ 
+<div class="product">
+  <h2>Mobile</h2>
+  <button (click)="onSelectProduct('Mobile')">Select this</button>
+</div>
+<div class="clear"></div>
+ 
+<br><br><br>
+ <div class="addto">
+   <h2 *ngIf="productSelected ==!true">Please Select any Product</h2>
+   <h2 *ngIf="productSelected">{{selectedProduct}} is Selected</h2>
+   <button (click)="onAddProduct()">add to list</button>
+ </div>
